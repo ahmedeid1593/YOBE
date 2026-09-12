@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOBE - Women's Fashion</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    > 
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= SPLASH SCREEN ================= -->
+    <div id="splash">
+        <div class="splash-content">
+            <div class="splash-logo-text">
+                <span>Y</span>
+                <span>O</span>
+                <span>B</span>
+                <span>E</span>
+            </div>
+            <div class="splash-line"></div>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="content">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="store-logo">
+                    <img src="images/logo.svg" alt="YOBE Logo" style="width: 320px; height: auto;">
+                </div>
+                <p class="small-title" style="margin-top: 10px;">
+                    WELCOME TO WOMEN'S FASHION
+                </p>
+                <p class="tagline">
+                    Exclusive style & timeless elegance.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section" style="padding-top: 25px;">
+            <p class="section-label">
+                CONTACT US
+            </p>
+            <h2>
+                Let's Connect
+            </h2>
+
+            <div class="actions">
+
+                <!-- CALL TRIGGER (OPENS CALL MODAL) -->
+                <button type="button" class="action-card" id="callTrigger">
+                    <span class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span>
+                        <strong>Call Us</strong>
+                        <small>Choose a number to call</small>
+                    </span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+
+                <!-- WHATSAPP TRIGGER (OPENS WHATSAPP MODAL) -->
+                <button type="button" class="action-card" id="whatsappTrigger">
+                    <span class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+                    <span>
+                        <strong>WhatsApp Chat</strong>
+                        <small>Choose a number to chat</small>
+                    </span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+
+                <!-- PAYMENT TRIGGER -->
+                <button type="button" class="action-card payment-trigger" id="paymentTrigger">
+                    <span class="icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </span>
+                    <span>
+                        <strong>Payment Methods</strong>
+                        <small>InstaPay & Wallet</small>
+                    </span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SOCIAL MEDIA ================= -->
+        <section class="section">
+            <p class="section-label">
+                FOLLOW US
+            </p>
+            <h2>
+                Stay Connected
+            </h2>
+
+            <div class="social-grid">
+
+                <!-- FACEBOOK -->
+                <a href="https://www.facebook.com/share/1bzDysbvcq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <!-- TIKTOK -->
+                <a href="https://www.tiktok.com/@user280785557?_r=1&_t=ZS-99ZKs841HPA" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+
+                <!-- WHATSAPP GROUP FOR NEW ARRIVALS -->
+                <a href="https://chat.whatsapp.com/IkI0qzatyrh7BnussUxsA2?mode=gi_t" target="_blank" rel="noopener noreferrer" class="social-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span> Group</span>
+                </a>
+
+            </div>
+        </section>
+
+
+       <!-- ================= FOOTER ================= -->
+        <footer>
+            <img src="images/logo.svg" alt="YOBE" style="width: 50px; height: auto;">
+            <p>YOBE Fashion</p>
+            <span>Made by Ahmed Eid</span>
+            <a href="https://wa.me/201127248864" target="_blank" rel="noopener noreferrer" class="developer-phone" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; margin-top: 6px;">
+                <i class="fa-brands fa-whatsapp" style="color: #b87d87; font-size: 14px;"></i>
+                <span>01127248864</span>
+            </a>
+        </footer>
+
+    </main>
+
+
+    <!-- ================= CALL MODAL ================= -->
+    <div id="callModal" class="payment-modal">
+        <div class="payment-overlay" id="callOverlay"></div>
+        <div class="payment-box">
+            <button type="button" class="payment-close" id="callClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="payment-header">
+                <div class="payment-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <p class="section-label">PHONE CALL</p>
+                <h2>Select Number</h2>
+            </div>
+
+            <a href="tel:01119768598" class="payment-method" style="text-decoration: none;">
+                <div class="payment-method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="payment-method-info">
+                    <strong>Call Number 1</strong>
+                    <span>011 1976 8598</span>
+                </div>
+                <button type="button" class="copy-button" style="pointer-events: none;">Call</button>
+            </a>
+
+            <a href="tel:01112558000" class="payment-method" style="text-decoration: none;">
+                <div class="payment-method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="payment-method-info">
+                    <strong>Call Number 2</strong>
+                    <span>011 1255 8000</span>
+                </div>
+                <button type="button" class="copy-button" style="pointer-events: none;">Call</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- ================= WHATSAPP MODAL ================= -->
+    <div id="whatsappModal" class="payment-modal">
+        <div class="payment-overlay" id="whatsappOverlay"></div>
+        <div class="payment-box">
+            <button type="button" class="payment-close" id="whatsappClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="payment-header">
+                <div class="payment-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <p class="section-label">WHATSAPP CHAT</p>
+                <h2>Select Number</h2>
+            </div>
+
+            <a href="https://wa.me/201119768598" target="_blank" rel="noopener noreferrer" class="payment-method" style="text-decoration: none;">
+                <div class="payment-method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="payment-method-info">
+                    <strong>WhatsApp Number 1</strong>
+                    <span>011 1976 8598</span>
+                </div>
+                <button type="button" class="copy-button" style="pointer-events: none;">Chat</button>
+            </a>
+
+            <a href="https://wa.me/201112558000" target="_blank" rel="noopener noreferrer" class="payment-method" style="text-decoration: none;">
+                <div class="payment-method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="payment-method-info">
+                    <strong>WhatsApp Number 2</strong>
+                    <span>011 1255 8000</span>
+                </div>
+                <button type="button" class="copy-button" style="pointer-events: none;">Chat</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- ================= PAYMENT MODAL ================= -->
+    <div id="paymentModal" class="payment-modal">
+        <div class="payment-overlay" id="paymentOverlay"></div>
+
+        <div class="payment-box">
+            <button type="button" class="payment-close" id="paymentClose" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="payment-header">
+                <div class="payment-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <p class="section-label">
+                    PAYMENT OPTIONS
+                </p>
+                <h2>
+                    Choose Payment
+                </h2>
+            </div>
+
+            <!-- INSTAPAY (DIRECT LINK) - FIRST -->
+            <a href="https://ipn.eg/S/sayedawed1234/instapay/7ZLODd" target="_blank" rel="noopener noreferrer" class="payment-method" style="text-decoration: none;">
+                <div class="payment-method-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="payment-method-info">
+                    <strong>InstaPay (Click to Pay)</strong>
+                    <span>Click to open InstaPay transfer</span>
+                </div>
+                <button type="button" class="copy-button" style="pointer-events: none;">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Pay
+                </button>
+            </a>
+
+            <!-- WALLET (NUMBER WITH COPY) - SECOND -->
+            <div class="payment-method">
+                <div class="payment-method-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+                <div class="payment-method-info">
+                    <strong>محفظة (Vodafone Cash)</strong>
+                    <span>01112558000</span>
+                </div>
+                <button type="button" class="copy-button" data-copy="01112558000">
+                    <i class="fa-regular fa-copy"></i>
+                    Copy
+                </button>
+            </div>
+
+            <p class="payment-note">
+                Click InstaPay to transfer directly, or copy the wallet number for mobile wallet transfer.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
